@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Солнечные батареи GreenCorp</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img class="header__logo" src='img/logo.svg'>
+    <div class="header__controls">
+      <a href="#contacts">Контакты</a>
+      <button>Заказать</button>
+    </div>
+  </header>
+  <section class="about">
+    <div class="about__info">
+      <h1>Солнечные панели GreenRobotic</h1>
+      <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
+      <button>Узнать подробнее</button>
+    </div>
+    <div class="about__images">
+      <img class="about__sun_image" src="img/sun.png">
+      <img class="about__image" src="img/solar-panel.png">
+    </div>
+  </section>
+  <section class="form">
+    <div class="form__containter">
+      <h1>Оставьте свои контакты</h1>
+      <p>
+        <br>Поможем подобрать модель.</br>
+        <br>Выбрать удобный вариант доставки и установки.</br>
+        <br>Гарантия возврата денег.</br>
+      </p>
+      <form>
+        <div class="form__group">
+          <label for="name">Ваше имя</label>
+          <input type="text" placeholder="Введите имя" id="name">
+        </div>
+        <div class="form__group">
+          <label for="email">Электронный адрес</label>
+          <input type="email" placeholder="***@yandex.ru" id="email">
+        </div>
+        <div class="form__group">
+          <label for="phone">Номер телефона</label>
+          <input type="tel" placeholder="7(999)999-99-99" id="phone">
+        </div>
+        <div class="form__group">
+          <label for="budget">Примерный бюджет</label>
+          <select  id="budget">
+            <option value="10-30">10 000₽ – 30 000₽</option>
+            <option value="30-60">30 000₽ – 60 000₽</option>
+            <option value="60-100">60 000₽ – 100 000₽</option>
+            <option value="100+">100 000₽</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <button type="submit">Отправить заявку</button>
+        </div>
+      </form>>
+    </div>
+  </section>
+</body>
+</html>
