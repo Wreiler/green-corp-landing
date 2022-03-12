@@ -3,6 +3,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    z-index: 1;
   }
 
 .header__logo {
@@ -52,10 +56,22 @@ button {
 .about__image {
     width: 500px;
   }
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
    
 .about__sun_image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s linear infinite;
+    position: absolute;
   }
 
 .about h1 {
@@ -192,4 +208,64 @@ footer {
   font-size: 16px;
   opacity: 0.7;
   padding-bottom: 30px;
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 10px;
+  }
+  .header__logo {
+    height: 20px;
+  }
+  header a {
+    margin-right: 10px;
+  }
+  .about {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+  }
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .form {
+    padding: 50px 10px;
+  }
+  .form h1 {
+    font-size: 36px;
+  }
+  footer {
+    padding: 50px 10px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .about__image {
+    width: 280px;
+  }
+   
+  .about__sun_image {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .about__image {
+    width: 280px;
+  }
+   
+  .about__sun_image {
+    width: 75px;
+    height: 75px;
+  }
 }
