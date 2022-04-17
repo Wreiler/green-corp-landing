@@ -3,11 +3,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
-    background-color: #fff;
+    position: fixed;
+    background: transparent;
     top: 0;
     z-index: 1;
+    left: 0;
+    right: 0;
+    transition: background-color, box-shadow 0.25s ease;
   }
+
+.header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
 
 .header__logo {
     height: 30px;
@@ -43,15 +51,23 @@ button {
   }
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
   }
+
+.orb-canvas{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
 
 .about__image {
     width: 500px;
